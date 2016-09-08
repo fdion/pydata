@@ -44,4 +44,4 @@ def better_estimator(sqft=2080, waterfront=0, below_grade=0, address=''):
 
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=8088, debug=True)
+    app.run(host='0.0.0.0', debug=True)

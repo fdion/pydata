@@ -20,3 +20,6 @@ def index(sqft=None, condition=None):
 
 def ballpark_estimator(sqft=2080, condition=3.4):
     return -214216.30529291916 + 292.81216765 * sqft + 43037.62951553 * condition
+
+if __name__ == "__main__":
+    app.run(host='0.0.0.0', port=8088, debug=True)

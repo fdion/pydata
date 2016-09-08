@@ -2,17 +2,24 @@
 {% block main %}
   <p>Hello, again.</p>
   <form action="/" method="post">
-    <label for="sqft">square feet of home:</label>
-    <input type="number" min="1" id="sqft" name="sqft" />
+    <label for="sqft">square feet of home (required):</label>
+    <input type="number" min="100" id="sqft" name="sqft" />
     <p>
-        <label for"condition">condition</label>
-        <input type="number" min="0" max="5" step="0.01" id="condition" name="condition" />
+        <label for="condition">condition</label>
+        <select id="condition" name="condition">
+            <option value=3.4 selected>Select one</option>
+            <option value=5>Excellent (5)</option>
+            <option value=4>Above average (4)</option>
+            <option value=3>Average (3)</option>
+            <option value=2>Below average (2)</option>
+            <option value=1>Poor (1)</option>
+        </select>
     <p>
         <button type="submit">submit</button>
     </p>
   </form>
   {% if valuation %}
     <p> You entered {{ sqft }} as the square footage of the home and {{ condition }}. We estimate the value of
-        the home to be {{ valuation }}.</p>
+        the home to be ${{ valuation }}.</p>
   {% endif %}
 {% endblock main %}

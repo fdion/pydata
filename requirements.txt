@@ -1,0 +1,7 @@
+Flask
+geopy
+matplotlib
+mpld3
+scipy
+sklearn
+watchdog

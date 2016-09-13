@@ -40,8 +40,8 @@ def admin():
     X_train = joblib.load('data/X_train.pkl')
     y_test = joblib.load('data/y_test.pkl')
     y_train = joblib.load('data/y_train.pkl')
-    ax = plt.scatter(lr.predict(X_train), lr.predict(X_train) - y_train, color='b', s=20, alpha=0.5)
-    plt.scatter(lr.predict(X_test), lr.predict(X_test) - y_test, color='r', s=20, alpha=0.5)
+    ax = plt.scatter(lr.predict(X_train), lr.predict(X_train) - y_train, color='r', s=20, alpha=0.5)
+    plt.scatter(lr.predict(X_test), lr.predict(X_test) - y_test, color='b', s=20, alpha=0.5)
     dataviz = mpld3.fig_to_html(ax.get_figure())
     return render_template('metrics.html', lr=lr, dataviz=dataviz)
 

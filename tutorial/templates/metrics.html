@@ -1,0 +1,6 @@
+{% extends "layout.html" %}
+{% block main %}
+    <p/> Current model version is <b>{{ lr.version }}</b> with a CV score of <b>{{ lr.cv }}</b>.
+    <p/>
+    {{ dataviz | safe }}
+{% endblock main %}

@@ -1,0 +1,26 @@
+*** inherit from the parent layout file ***
+*** replace the block in the parent layout file ***
+  <p>Hello, again.</p>
+  <form action="/" method="*** specify type of method ***">
+    <label for="sqft">square feet of home (required):</label>
+    <input type="number" min="100" id="sqft" name="sqft" />
+    <p>
+        <label for="condition">condition</label>
+        <select id="condition" name="condition">
+            <option value=3.4 selected>Select one</option>
+            <option value=5>Excellent (5)</option>
+            <option value=4>Above average (4)</option>
+            <option value=3>Average (3)</option>
+            *** add 2 new options:  Below average (2)
+                                    Poor (1)
+            ***
+        </select>
+    <p>
+        <button type="submit">submit</button>
+    </p>
+  </form>
+  *** use a conditional to see if there's a value for valuation ***
+    <p> You entered {{ sqft }} as the square footage of the home and {{ condition }}. We estimate the value of
+        the home to be ${{ valuation }}.</p>
+  *** end the conditional ***
+*** close the main block here ***

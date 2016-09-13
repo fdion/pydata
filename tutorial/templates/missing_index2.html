@@ -1,0 +1,41 @@
+
+
+    <p>Hello, again.</p>
+    <form action="/" method="post">
+        <label for="sqft">square feet of home (required):</label>
+        <input type="number" min="100" id="sqft" name="sqft"/>
+
+        <p>
+            <label for="condition">condition</label>
+            <select id="condition" name="condition">
+                <option value=3.4 selected>Select one</option>
+                <option value=5>Excellent (5)</option>
+                <option value=4>Above average (4)</option>
+                <option value=3>Average (3)</option>
+                <option value=2>Below average (2)</option>
+                <option value=1>Poor (1)</option>
+            </select>
+        </p>
+        <p>
+        <hr/>
+        Optional (will provide a more precise estimate of your house valuation
+        <p>
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address">
+            <label for="waterfront">waterfront:</label>
+            <input type="checkbox" id="address" name="waterfront">
+            <label for="below_grade">square feet below grade:</label>
+            <input type="number" min="0" value="0" id="below_grade" name="below_grade"/>
+        </p>
+
+        <p>
+            <button type="submit">submit</button>
+        </p>
+    </form>
+
+        <p> You entered        as the square footage of the home and {{ condition }}. We estimate the value of
+            the home to be $             .</p>
+
+
+        We used this Nominatim location: 
+

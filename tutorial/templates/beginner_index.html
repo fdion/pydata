@@ -1,0 +1,26 @@
+{% extends "*** replace with parent file name here. hint:  it starts with layout ***" %}
+{% block *** add block name here (found in parent file) ***%}
+  <p>Hello, again.</p>
+  <form action="/" method="*** specify type of method; choices are GET, POST, PUT, and DELETE ***">
+    <label for="sqft">square feet of home (required):</label>
+    <input type="number" min="100" id="sqft" name="sqft" />
+    <p>
+        <label for="condition">condition</label>
+        <select id="condition" name="condition">
+            <option value=3.4 selected>Select one</option>
+            <option value=5>Excellent (5)</option>
+            <option value=4>Above average (4)</option>
+            <option value=3>Average (3)</option>
+            <option value=2>Below average (2)</option>
+            <option value=1>Poor (1)</option>
+        </select>
+    <*** oops! we are missing a closing tag for the paragraph tag***>
+    <p>
+        <button type="submit">submit</button>
+    </p>
+  </form>
+  {% if valuation %}
+    <p> You entered {{ sqft }} as the square footage of the home and {{ condition }}. We estimate the value of
+        the home to be ${{ valuation }}.</p>
+  {% *** end the conditional block *** %}
+{% *** end the block *** main %}

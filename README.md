@@ -1,9 +1,13 @@
 # PyData Carolinas 2016 Tutorial: Datascience on the web
 
+Welcome to Datascience on the web, with Don and Francois.
+
 You have been given a paper with a URL in the form: https://xxxxx-xxx.dionresearch.com:8088
 
 Point your browser to it and type the accompanying password.
 
+Problems? Raise your hand and somebody will help you, even perhaps your neighbor. Also, feel free to tweet about this
+ session. I am @f_dion and this is #datascience and #flask at #pydatacarolinas.
 
 # After the fact
 
@@ -38,6 +42,7 @@ This repository will get a few more files after the tutorial, including some PDF
  - [plot.ly](http://plot.ly)
  - [Bokeh](http://bokeh.pydata.org/en/latest/)
  - [Pygal](http://www.pygal.org/en/stable/)
+ - [Altair](https://pypi.python.org/pypi/altair/1.0.0)
 
 # Further reading
 

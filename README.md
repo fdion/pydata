@@ -45,7 +45,7 @@ Check out these awesome lists:
  - [The list of lists](https://github.com/sindresorhus/awesome)
  - [The awesome flask list](https://github.com/humiaozuzu/awesome-flask)
  
- And this video for building APIs with [flask-restplus](http://flask-restplus.readthedocs.io/en/stable/): [you-tube video]()
+ And this video for building APIs with [flask-restplus](http://flask-restplus.readthedocs.io/en/stable/): [you-tube video](https://www.youtube.com/watch?v=hV2ccg4mw_Q&feature=youtu.be)
 
 # Automating the basics
 

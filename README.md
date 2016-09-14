@@ -13,6 +13,14 @@ Problems? Raise your hand and somebody will help you, even perhaps your neighbor
 
 The unrefactored notebook is [here](https://github.com/fdion/pydata/blob/master/notebooks/PyData.ipynb) while the refactored one is [here](https://github.com/fdion/pydata/blob/master/notebooks/PyData-Refactored.ipynb).
 
+Once you run through the whole refactored notebook, you will have train and test sets saved in data/ and a trained 
+model in trained_models/. To make these available in the tutorial directory, you will have to run the publish.sh 
+script. On a unix like environment (mac, linux etc):
+
+    chmod a+x publish.sh
+    ./publish.sh
+
+
 # Updates
 
 This repository will get a few more files after the tutorial, including some PDFs. Make sure you watch the repo if you want the latest information.

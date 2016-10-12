@@ -20,6 +20,9 @@ script. On a unix like environment (mac, linux etc):
     chmod a+x publish.sh
     ./publish.sh
 
+# Video
+
+The whole session is now on youtube: [Francois Dion & Don Jennings Datascience on the web](https://www.youtube.com/watch?v=qP_8ch-5XhE)
 
 # Updates
 
